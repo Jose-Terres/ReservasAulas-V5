@@ -19,7 +19,7 @@ mainClassName = 'pruebajavafxgradle.Main'
 
 jar {
   manifest {
-    attributes 'Main-Class': 'pruebajavafxgradle.LanzadoraMain'
+    attributes 'Main-Class': 'pruebajavafxgradle.MainApp'
   }
   from {
     configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
