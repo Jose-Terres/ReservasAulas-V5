@@ -7,4 +7,4 @@
  * in the user manual at https://docs.gradle.org/6.6-milestone-3/userguide/multi_project_builds.html
  */
 
-rootProject.name = 'ReservasAulas-V4'
+rootProject.name = 'ReservasAulas-V5'
