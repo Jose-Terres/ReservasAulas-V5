@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.reservasaulas.mvc.vista.grafica.controladores.ControladorVentanaPrincipal">
+   <children>
+      <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Archivo">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#salir" text="Cerrar" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ayuda">
+            <items>
+              <MenuItem fx:id="mnAcercaDe" mnemonicParsing="false" onAction="#acercaDe" text="Acerca de" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <VBox layoutY="143.0" prefHeight="242.0" prefWidth="600.0" spacing="50.0">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="26.0" prefWidth="429.0" spacing="100.0">
+               <children>
+                  <Button fx:id="btnIrAulas" mnemonicParsing="false" onAction="#irPaginaAulas" text="AULAS" />
+                  <Button fx:id="btnIrProfesores" mnemonicParsing="false" onAction="#irPaginaProfesores" text="PROFESORES" />
+                  <Button fx:id="btnIrReservas" mnemonicParsing="false" onAction="#irPaginaReservas" text="RESERVAS" />
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="146.0" prefWidth="542.0" spacing="25.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="165.0">
+                     <children>
+                        <Label text="Opciones gestionar aulas:" />
+                        <Label text="-Insertar" />
+                        <Label text="-Borrar" />
+                        <Label text="-Listar" />
+                        <Label text="-Buscar" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="165.0">
+                     <children>
+                        <Label text="Opciones gestionar profesores:" />
+                        <Label text="-Insertar" />
+                        <Label text="-Borrar" />
+                        <Label text="-Listar" />
+                        <Label text="-Buscar" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="165.0">
+                     <children>
+                        <Label text="Opciones gestionar reservas:" />
+                        <Label text="-Insertar" />
+                        <Label text="-Borrar" />
+                        <Label text="-Listar" />
+                        <Label text="-Buscar" />
+                        <Label text="-Listar reserva por profesor" />
+                        <Label text="-Consultar disponibilidad" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Label layoutX="75.0" layoutY="68.0" text="Bienvenido a la aplicacion para gestionar las aulas">
+         <font>
+            <Font name="Arimo" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="26.0" fitWidth="33.0" layoutX="109.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/aula.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="40.0" layoutX="274.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/profesor.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="38.0" layoutX="455.0" layoutY="109.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/calendario.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
