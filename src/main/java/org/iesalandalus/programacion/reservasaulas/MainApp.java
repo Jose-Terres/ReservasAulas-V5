@@ -37,6 +37,8 @@ public class MainApp {
         fuenteDatos = FactoriaFuenteDatos.MEMORIA.crear();
       } else if (argumento.equalsIgnoreCase("-fdficheros")) {
         fuenteDatos = FactoriaFuenteDatos.FICHEROS.crear();
+      } else if (argumento.equalsIgnoreCase("-fdmongo")) {
+        fuenteDatos = FactoriaFuenteDatos.MONGODB.crear();
       }
     }
     return fuenteDatos;
