@@ -5,13 +5,23 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="483.0" prefWidth="729.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.reservasaulas.mvc.vista.grafica.controladores.ControladorProfesores">
    <children>
-      <Label layoutX="329.0" layoutY="34.0" text="PROFESORES" />
-      <Button fx:id="btnInsertarProfesor" layoutX="211.0" layoutY="73.0" mnemonicParsing="false" onAction="#insertar" text="Insertar " />
-      <Button fx:id="btnBuscarProfesor" layoutX="516.0" layoutY="73.0" mnemonicParsing="false" onAction="#buscar" text="Buscar" />
+      <Label layoutX="329.0" layoutY="25.0" text="PROFESORES" />
+      <Button fx:id="btnInsertarProfesor" layoutX="193.0" layoutY="73.0" mnemonicParsing="false" onAction="#insertar" prefHeight="26.0" prefWidth="109.0" text="Insertar " />
+      <Button fx:id="btnBuscarProfesor" layoutX="496.0" layoutY="72.0" mnemonicParsing="false" onAction="#buscar" prefHeight="26.0" prefWidth="91.0" text="Buscar">
+         <graphic>
+            <ImageView fitHeight="19.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/lupa.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
       <TextField fx:id="inpInsertarNombreProfesor" layoutX="165.0" layoutY="114.0" prefHeight="26.0" prefWidth="164.0" />
       <TextField fx:id="inpInsertarEmailProfesor" layoutX="166.0" layoutY="156.0" prefHeight="26.0" prefWidth="164.0" />
       <Label layoutX="80.0" layoutY="118.0" text="NOMBRE" />
@@ -20,15 +30,40 @@
          <columns>
             <TableColumn fx:id="columNombreProfesor" prefWidth="178.40002822875977" text="NOMBRE" />
             <TableColumn fx:id="columnEmailProfesor" prefWidth="218.3999481201172" text="E-MAIL" />
-            <TableColumn fx:id="columnTelefonoProfesor" prefWidth="187.20001220703125" text="TELEFONO" />
+            <TableColumn fx:id="columnTelefonoProfesor" prefWidth="193.60003662109375" text="TELEFONO" />
          </columns>
       </TableView>
-      <Button fx:id="btnVolver" layoutX="357.0" layoutY="432.0" mnemonicParsing="false" onAction="#salir" text="Volver" />
+      <Button fx:id="btnVolver" layoutX="329.0" layoutY="432.0" mnemonicParsing="false" onAction="#salir" prefHeight="26.0" prefWidth="78.0" text="Volver">
+         <graphic>
+            <ImageView fitHeight="38.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/salir.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
       <TextField fx:id="inpInsertarTelefonoProfesor" layoutX="166.0" layoutY="195.0" prefHeight="26.0" prefWidth="164.0" />
       <Label layoutX="76.0" layoutY="199.0" text="TELEFONO" />
-      <Button fx:id="btnBorrarProfesor" layoutX="657.0" layoutY="316.0" mnemonicParsing="false" onAction="#borrar" text="Borrar" />
+      <Button fx:id="btnBorrarProfesor" layoutX="649.0" layoutY="316.0" mnemonicParsing="false" onAction="#borrar" text="Borrar">
+         <graphic>
+            <ImageView fitHeight="43.0" fitWidth="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/x.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
       <Label layoutX="343.0" layoutY="199.0" text="No obligatorio" />
       <TextField fx:id="inpBuscarNombreProfesor" layoutX="446.0" layoutY="113.0" prefHeight="26.0" prefWidth="192.0" />
       <Label layoutX="496.0" layoutY="147.0" text="EMAIL BUSCADO" />
+      <ImageView fitHeight="18.0" fitWidth="19.0" layoutX="201.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/insertar.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="29.0" layoutX="289.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/profesor.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="657.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Borra el profesor seleccionado" wrappingWidth="49.60000000000002" />
    </children>
 </AnchorPane>

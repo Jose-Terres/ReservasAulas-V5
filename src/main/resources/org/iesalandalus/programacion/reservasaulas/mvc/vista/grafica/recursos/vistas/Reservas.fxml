@@ -22,7 +22,7 @@
                </image>
             </ImageView>
          </graphic></Button>
-      <Button fx:id="btnListarReservas" layoutX="36.0" layoutY="203.0" mnemonicParsing="false" onAction="#listarReservas" prefHeight="26.0" prefWidth="133.0" text="Listar las reservas" />
+      <Button fx:id="btnListarReservas" layoutX="34.0" layoutY="203.0" mnemonicParsing="false" onAction="#listarReservas" prefHeight="26.0" prefWidth="136.0" text="    Listar las reservas" />
       <TableView fx:id="tableListarReservas" layoutX="33.0" layoutY="345.0" prefHeight="230.0" prefWidth="742.0">
          <columns>
             <TableColumn fx:id="columnProfesorReservas" prefWidth="228.79996871948242" text="PROFESOR" />
@@ -46,10 +46,10 @@
                </image>
             </ImageView>
          </graphic></Button>
-      <Button fx:id="btnListarReservaAula" layoutX="33.0" layoutY="242.0" mnemonicParsing="false" onAction="#listarAula" prefHeight="26.0" prefWidth="133.0" text=" Listar por aula" />
+      <Button fx:id="btnListarReservaAula" layoutX="33.0" layoutY="242.0" mnemonicParsing="false" onAction="#listarAula" prefHeight="26.0" prefWidth="136.0" text=" Listar por aula" />
       <Button fx:id="btnListarReservaProfesor" layoutX="33.0" layoutY="278.0" mnemonicParsing="false" onAction="#listarProfesor" text="Listar por profesor">
          <graphic>
-            <ImageView fitHeight="15.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="18.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../imagenes/Listar.png" />
                </image>
@@ -57,7 +57,7 @@
          </graphic></Button>
       <Label layoutX="226.0" layoutY="41.0" text="AULA" />
       <Label layoutX="188.0" layoutY="207.0" text="LISTAR TODAS LAS RESERVAS SIN FILTROS" />
-      <ImageView fitHeight="17.0" fitWidth="19.0" layoutX="36.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="17.0" fitWidth="19.0" layoutX="39.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../imagenes/Listar.png" />
          </image>
@@ -66,7 +66,7 @@
       <Label layoutX="454.0" layoutY="41.0" text="PROFERSOR" />
       <Label layoutX="223.0" layoutY="119.0" text="FECHA" />
       <Label layoutX="470.0" layoutY="119.0" text="HORA" />
-      <ImageView fitHeight="17.0" fitWidth="25.0" layoutX="36.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="17.0" fitWidth="25.0" layoutX="40.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../imagenes/Listar.png" />
          </image>
@@ -75,16 +75,22 @@
          <graphic>
             <ImageView fitHeight="14.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../imagenes/insertar.png" />
+                  <Image url="@../imagenes/lupa.png" />
                </image>
             </ImageView>
          </graphic>
       </Button>
       <Text layoutX="664.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Consulta la disponibilidad del aula seleccionada en la fecha y el tramo seleccionado" wrappingWidth="156.493408203125" />
       <ChoiceBox fx:id="dpAulaInsertar" layoutX="166.0" layoutY="73.0" prefWidth="150.0" />
-      <ChoiceBox fx:id="dpTramo" layoutX="404.0" layoutY="148.0" prefWidth="150.0" />
-      <ChoiceBox fx:id="dpProfesorInsertar" layoutX="405.0" layoutY="73.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="dpTramo" layoutX="415.0" layoutY="148.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="dpProfesorInsertar" layoutX="415.0" layoutY="73.0" prefWidth="150.0" />
       <ChoiceBox fx:id="dpBuscarProfesor" layoutX="188.0" layoutY="278.0" prefWidth="150.0" />
       <ChoiceBox fx:id="dpBuscarAula" layoutX="188.0" layoutY="242.0" prefWidth="150.0" />
+      <ImageView fitHeight="38.0" fitWidth="36.0" layoutX="310.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/calendario.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="802.0" layoutY="502.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Borra la reserva seleccionada" wrappingWidth="55.200000000000045" />
    </children>
 </AnchorPane>
